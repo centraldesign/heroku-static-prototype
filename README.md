@@ -84,6 +84,7 @@ git push heroku master
 
 Go to [Heroku](https://www.heroku.com)’s and edit the settings of your newly created instance.
 In the Config Variables section:
+
 1. Add a variable with the KEY “USERNAME” and enter the username you want to use in the VALUE field.
 2. Add another variable with the KEY “PASSWORD” and enter the password you want to use in the VALUE field.
 
