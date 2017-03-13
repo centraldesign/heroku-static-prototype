@@ -1,0 +1,16 @@
+{
+  "name": "stepstone-static-prototype",
+  "version": "0.1.0",
+  "description": "StepStone Static Prototype",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "basic-auth-connect": "^1.0.0"
+  },
+  "engines": {
+    "node": "0.12.5"
+  }
+}
