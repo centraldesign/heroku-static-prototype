@@ -6,16 +6,16 @@ Simply use Heroku instances to serve your file and share a url that you can prot
 
 # Create a new server
 
-Download the source and unzip it your hard-drive.
+[Download the source](https://github.com/centraldesign/heroku-static-prototype/archive/master.zip) and unzip it your hard-drive.
 
 Rename the folder with your project name, for example ```myprojectname-demo```.
 
 Copy the ```_dist``` folder of your static prototype and paste it in the created folder (replace the existing empty ```_dist``` directory).
 
-In terminal navigate to the created folder.
+In terminal, navigate to the created folder.
 
 ```
-cd Demo/myprojectname-demo
+cd directory/myprojectname-demo
 ```
 
 We’ll use git to initialize and create a version of the site you want to deploy. To do that run the command:
@@ -24,7 +24,7 @@ We’ll use git to initialize and create a version of the site you want to deplo
 git init
 git add .
 git commit -m "Prototype for deployment."
-``` 
+```
 
 Now we will create your server on Heroku. If you didn’t logged to Heroku before do:
 
@@ -32,10 +32,10 @@ Now we will create your server on Heroku. If you didn’t logged to Heroku befor
 heroku login
 ```
 
-Then enter the following commands to create a Heroku instance:	
+Then enter the following commands to create a Heroku instance:
 
 ```
-heroku apps:create stst-yourprojectname 
+heroku apps:create stst-yourprojectname
 ```
 
 We usually follow the ```stst-yourprojectname``` naming convention to name prototype servers. You can eventually add a version number if you want to host multiple versions of your prototype (```stst-yourprojectname-1.4```).
@@ -43,10 +43,10 @@ We usually follow the ```stst-yourprojectname``` naming convention to name proto
 Now push your content to your Heroku instance:
 
 ```
-heroku apps:create stst-yourprojectname 
+git push heroku master
 ```
 
-The server name must be unique, if not the command will return an error and you pick another one. 
+The server name must be unique, if not the command will return an error and you pick another one.
 
 Once you see “remote: Verifying deploy…. done.” visit your prototype at https://stst-yourprojectname.heroku.app in your browser. This url is public and can be shared with anyone, if you want to password protect it see below.
 
@@ -56,7 +56,7 @@ Later if you want to update the instance with your changes just do:
 git add .
 git commit -m "Add useful message"
 git push heroku master
-``` 
+```
 
 # Update a pre-existing server
 Use this if someone else already created a prototype server on Heroku and you want to update it with a new version of the prototype.
@@ -78,7 +78,7 @@ Commit and push your change to Heroku:
 git add .
 git commit -m "Add useful message"
 git push heroku master
-``` 
+```
 
 # Protect with a password
 
