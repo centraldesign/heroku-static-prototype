@@ -35,10 +35,10 @@ heroku login
 Then enter the following commands to create a Heroku instance:
 
 ```
-heroku apps:create stst-yourprojectname
+heroku apps:create yourprojectname
 ```
 
-We usually follow the ```stst-yourprojectname``` naming convention to name prototype servers. You can eventually add a version number if you want to host multiple versions of your prototype (```stst-yourprojectname-1.4```).
+We usually follow the ```yourprojectname``` naming convention to name prototype servers. You can eventually add a version number if you want to host multiple versions of your prototype (```yourprojectname-1.4```).
 
 Now push your content to your Heroku instance:
 
@@ -48,7 +48,7 @@ git push heroku master
 
 The server name must be unique, if not the command will return an error and you pick another one.
 
-Once you see “remote: Verifying deploy…. done.” visit your prototype at https://stst-yourprojectname.heroku.app in your browser. This url is public and can be shared with anyone, if you want to password protect it see below.
+Once you see “remote: Verifying deploy…. done.” visit your prototype at https://yourprojectname.heroku.app in your browser. This url is public and can be shared with anyone, if you want to password protect it see below.
 
 Later if you want to update the instance with your changes just do:
 
@@ -65,10 +65,10 @@ _If someone else created the server, be sure you’ve been added to it before._
 First checkout the existing Heroku instance locally:
 
 ```
-heroku git:clone -a stst-yourprojectname
+heroku git:clone -a yourprojectname
 ```
 
-```stst-yourprojectname``` is the name of the pre-existing instance.
+```yourprojectname``` is the name of the pre-existing instance.
 
 Replace the ```_dist``` directory with the new version copied from your prototype.
 
@@ -88,4 +88,4 @@ In the Config Variables section:
 1. Add a variable with the KEY “USERNAME” and enter the username you want to use in the VALUE field.
 2. Add another variable with the KEY “PASSWORD” and enter the password you want to use in the VALUE field.
 
-Go to https://stst-yourprojectname.heroku.app and now you will need to enter the credentials you set to access the prototype.
+Go to https://yourprojectname.heroku.app and now you will need to enter the credentials you set to access the prototype.
