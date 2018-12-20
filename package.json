@@ -1,7 +1,7 @@
 {
-  "name": "stepstone-static-prototype",
+  "name": "prototype-name",
   "version": "0.1.0",
-  "description": "StepStone Static Prototype",
+  "description": "Description of your prototype",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
